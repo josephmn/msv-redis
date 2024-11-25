@@ -1,0 +1,17 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: msv-redis
+  # configuration redis
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 2000
+
+logging:
+  level:
+    org.springframework.data.redis: DEBUG
